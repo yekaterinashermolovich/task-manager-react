@@ -16,6 +16,8 @@ export const loadState = () => {
         if(serialState === 0) {
             return undefined;
         }
+
+        return JSON.parse(serialState);
         
     } catch (error) {
 
